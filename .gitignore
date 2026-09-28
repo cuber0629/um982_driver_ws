@@ -1,0 +1,21 @@
+# ROS/catkin build outputs
+/build/
+/devel/
+/install/
+/log/
+/.catkin_workspace
+/src/CMakeLists.txt
+
+# Local tooling and editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Python/cache files
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db

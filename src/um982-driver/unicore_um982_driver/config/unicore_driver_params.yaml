@@ -1,0 +1,23 @@
+port: "/dev/ttyGPS"
+baudrate: 115200
+
+# Commands sent once after opening the receiver.
+config_commands:
+  - "CONFIG COM3 115200"
+  - "MODE ROVER SURVEY"
+  - "unmask GPS"
+  - "unmask bds"
+  - "unmask GLO"
+  - "unmask GAL"
+  - "unmask QZSS"
+  - "UNLOG"
+  - "CONFIG SMOOTH RTKHEIGHT 2"
+  - "CONFIG SMOOTH HEADING 2"
+  - "CONFIG SMOOTH PSRVEL ENABLE"
+  - "CONFIG RTK TIMEOUT 300"
+  - "CONFIG RTK RELIABILITY 4 2"
+  - "CONFIG HEADING FIXLENGTH"
+  - "CONFIG HEADING LENGTH 43 1"
+  - "CONFIG HEADING RELIABILITY 3"
+  - "PVTSLNA COM3 1"
+  - "SAVECONFIG"

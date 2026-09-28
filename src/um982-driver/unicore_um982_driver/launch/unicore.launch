@@ -1,0 +1,14 @@
+<launch>
+  <arg name="port" default="/dev/ttyGPS" />
+  <arg name="baudrate" default="115200" />
+  <arg name="config_file" default="$(find unicore_um982_driver)/config/unicore_driver_params.yaml" />
+
+  <node pkg="unicore_um982_driver"
+        type="unicore_um982_driver_node"
+        name="unicore_um982_driver"
+        output="screen">
+    <rosparam command="load" file="$(arg config_file)" />
+    <param name="port" value="$(arg port)" />
+    <param name="baudrate" value="$(arg baudrate)" />
+  </node>
+</launch>

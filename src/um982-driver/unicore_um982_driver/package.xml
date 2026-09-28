@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>unicore_um982_driver</name>
+  <version>0.1.0</version>
+  <description>ROS 1 driver for the Unicore UM982 dual-antenna RTK GPS receiver.</description>
+
+  <maintainer email="alford.tyler94@gmail.com">tyler</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>diagnostic_msgs</depend>
+  <depend>diagnostic_updater</depend>
+  <depend>geometry_msgs</depend>
+  <depend>roscpp</depend>
+  <depend>serial</depend>
+  <depend>sensor_msgs</depend>
+
+  <export/>
+</package>
